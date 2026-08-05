@@ -8,4 +8,8 @@ mod rust_core {
     fn hello_from_bin() -> String {
         "Hello from rust!!".to_string()
     }
+
+    fn feat1(){
+        println!("feat1");
+    }
 }
