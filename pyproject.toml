@@ -1,0 +1,25 @@
+[project]
+name = "test-ci"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Mattia Marini", email = "marmattia26@gmail.com" }
+]
+requires-python = ">=3.14"
+dependencies = []
+
+[project.scripts]
+main = "your_package_name:main" #TODO change to package name
+
+[tool.maturin]
+python-source = "python-core"
+manifest-path = "rust-core/Cargo.toml"
+module-name = "your_package_name.rust_core" #TODO change to che rust-native submodule name
+
+[tool.uv]
+cache-keys = [{ file = "pyproject.toml" }, { file = "**/src/**/*.rs" }, { file = "**/Cargo.toml" }, { file = "**/Cargo.lock" }]
+
+[build-system]
+requires = ["maturin>=1.9.4,<2.0"]
+build-backend = "maturin"

@@ -1,0 +1,13 @@
+[package]
+name = "your-package-name-1" #TODO change to unique name; it should NOT exist on crates.io
+version = "0.1.0"
+edition = "2024"
+description = "your package brief description" #TODO change to your package description
+license = "MIT OR Apache-2.0" #TODO change to your package license
+
+[lib]
+name = "rust_core" #TODO change to che rust-native submodule name
+crate-type = ["cdylib"]
+
+[dependencies]
+pyo3 = "0.29.0"
