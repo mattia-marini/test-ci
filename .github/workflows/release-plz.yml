@@ -9,7 +9,7 @@ jobs:
 
   # Release unpublished packages.
   release-plz-release:
-    environment: crates-io # <--- Matches the name of your GitHub environment
+    environment: release # <--- Matches the name of your GitHub environment
     name: Release-plz release
     runs-on: ubuntu-latest
     permissions:
