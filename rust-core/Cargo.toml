@@ -1,6 +1,6 @@
 [package]
 name = "your-package-name-1" #TODO change to unique name; it should NOT exist on crates.io
-version = "0.1.1"
+version = "0.1.2"
 edition = "2024"
 description = "your package brief description" #TODO change to your package description
 license = "MIT OR Apache-2.0" #TODO change to your package license
